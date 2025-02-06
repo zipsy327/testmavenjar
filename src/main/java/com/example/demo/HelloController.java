@@ -8,12 +8,15 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class HelloController {
 	@GetMapping("/")
-	public String hello(Model model)
+//	public String hello(Model model)
+//	{
+//		model.addAttribute("mes", "Maven SpringBoot");
+//		return "hello";
+//	}
+	@ResponseBody public String hello()
 	{
-		model.addAttribute("mes", "Maven SpringBoot");
-		return "hello";
+		return "Hello Jenkins";
 	}
-	
 /*	@ResponseBody public String hello()
 	{
 		return "hello";
